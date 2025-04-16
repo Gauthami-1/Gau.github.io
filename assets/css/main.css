@@ -1,0 +1,224 @@
+/* RESET STYLES - Resets default padding, margin, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY AND LAYOUT STYLES - Sets up the main body styling and layout */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333; /* Dark gray for text */
+    background-color: #f7f7f7; /* Light gray background */
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Ensures main content takes up available space */
+}
+
+/* HEADER STYLES - Styling for the header section */
+header {
+    background-color: #2c3e50; /* Dark navy background */
+    color: white;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #b0c4de; /* Light steel blue for subtitle */
+}
+
+/* NAVIGATION BAR - Styles for the navigation menu */
+#nav {
+    background-color: #34495e; /* Dark gray-blue background */
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#nav .links, #nav .icons {
+    display: flex;
+    gap: 20px;
+}
+
+#nav a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nav .links .active, #nav a:hover {
+    background-color: #171725; /* Teal for active and hover states */
+    color: white;
+}
+
+/* SECTION CONTAINER - Layout for main content container */
+.experience-section {
+    padding: 40px 20px;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SECTION STYLES - Styling for individual content sections */
+.section {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    position: relative;
+    margin: 20px 0;
+    overflow: auto;
+}
+
+.section h2 {
+    font-size: 1em;
+    color: #2c3e50; /* Dark navy for headers */
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* TIMELINE INDICATOR - Adds a timeline effect in sections */
+.section::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #2c3e50; /* Dot color */
+    border-radius: 50%; /* Circular shape */
+}
+
+.section::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    width: 2px;
+    height: calc(100% - 40px); /* Line connects from the dot */
+    background-color: #ddd; /* Line color */
+}
+
+/* RESPONSIVE LAYOUT - Adjusts layout on smaller screens */
+@media (max-width: 768px) {
+    .section {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}
+
+/* FOOTER STYLES - Footer styling */
+footer {
+    background-color: #2c3e50; /* Matches header color */
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* LIST STYLES - Bullet styling for lists */
+ul {
+    list-style-type: disc; /* Default bullet point */
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* SKILLS SECTION FORMATTING - Styles for skills section */
+.skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skill-category {
+    background-color: #ffffff;
+    border-left: 4px solid #2c3e50; /* Decorative border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.skill-category h2 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.skill-category p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* RESPONSIVE DESIGN FOR SKILLS SECTION */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 20px;
+    }
+}
+
+/* ICONS - Styling for social media icons */
+.icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    list-style: none; /* No bullet points */
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px; /* Space between title and icons */
+}
+
+.icons .icon {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icons .icon:hover {
+    color: #0077b5; /* Hover color (LinkedIn blue or preferred color) */
+}
+
+/* ACTIVITIES DIVIDER - Styled divider for activities section */
+.styled-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #121518, #052753, #121518); /* Gradient color */
+    width: 50%; /* Divider width */
+    margin: 5px auto; /* Centered with vertical spacing */
+}
