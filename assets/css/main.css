@@ -7,7 +7,6 @@
 /* INTRO STYLE */
 #intro {
   font-size: 18px;
-  font-style: italic;  /* this makes it look like <em> */
   color: black;        /* force text to be black */
   margin-top: 50px;
   margin-bottom: 50px;
