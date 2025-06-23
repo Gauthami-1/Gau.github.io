@@ -26,84 +26,108 @@
     <!-- Projects Section -->
     <section class="experience-section">
         <div class="section-container">
+
+            <!-- 1. Automated AWS System – real-world cloud pipeline -->
             <section class="section active">
-                <h1>Automated AWS Receipt Processing System</h1>
-                <hr class="styled-divider">
-                <ul>
-                    <li>Developed an event-driven receipt processing system using <strong>AWS Lambda</strong>, <strong>Textract</strong>, <strong>DynamoDB</strong>, <strong>SES</strong>, and <strong>S3</strong>.</li>
-                    <li>Extracted vendor, total, date, and item details from uploaded receipts using <strong>Textract's AnalyzeExpense</strong> API.</li>
-                    <li>Stored structured receipt data in <strong>DynamoDB</strong> and triggered email notifications via <strong>Amazon SES</strong> with formatted HTML summaries.</li>
-                    <li>Implemented error handling and logging for fault-tolerant processing of uploaded S3 files.</li>
-                </ul>
-            </section>
-    
-            <section class="section active">
-                <h1>Senior Design: Antweight Battlebot</h1>
-                <hr class="styled-divider">
-                <ul>
-                    <li>Designed and built a 2lb battlebot with a custom PCB, mecanum wheels, and a spinning weapon.</li>
-                    <li>Programmed the <strong>ESP32-C3</strong> for wireless control and integrated <strong>DRV8833 motor drivers</strong> and voltage regulators.</li>
-                    <li>Handled embedded software, power calculations, and final hardware integration for demo.</li>
-                </ul>
+            <h1>Automated AWS Receipt Processing System</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Developed an event-driven receipt processing system using <strong>AWS Lambda</strong>, <strong>Textract</strong>, <strong>DynamoDB</strong>, <strong>SES</strong>, and <strong>S3</strong>.</li>
+                <li>Extracted vendor, total, date, and item details from uploaded receipts using <strong>Textract's AnalyzeExpense</strong> API.</li>
+                <li>Stored structured receipt data in <strong>DynamoDB</strong> and triggered email notifications via <strong>Amazon SES</strong> with formatted HTML summaries.</li>
+                <li>Implemented error handling and logging for fault-tolerant processing of uploaded S3 files.</li>
+            </ul>
             </section>
 
+            <!-- 2. Interactive Travel Platform – full-stack + real datasets -->
             <section class="section active">
-                <h1>SWE RSO Mobile App (In Progress)</h1>
-                <hr class="styled-divider">
-                <ul>
-                    <li>Building an Flutter app for SWE members to view <strong>calendar updates</strong>, track <strong>event points</strong>, and stay engaged with the RSO.</li>
-                    <li>Responsible for full-stack integration using <strong>Firebase</strong> for auth & data</li>
-                </ul>
+            <h1>Interactive Travel Platform</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Built a full-stack travel web application with <strong>user authentication</strong>, <strong>interactive maps</strong>, and <strong>wishlist management</strong>.</li>
+                <li>Implemented dynamic attraction filtering and location-based hotel recommendations using the <strong>Haversine formula</strong> on geolocation data.</li>
+                <li>Used <strong>Flask</strong>, <strong>JavaScript</strong>, and <strong>Google Maps API</strong> for dynamic frontend features and routing.</li>
+                <li>Integrated datasets on attractions, Airbnbs, and flights, and used <strong>Google Cloud SQL</strong> for data management.</li>
+            </ul>
             </section>
 
+            <!-- 3. Weather Forecasting App – Android, LLMs, offline caching -->
             <section class="section active">
-                <h1>Interactive Travel Platform</h1>
-                <hr class="styled-divider"> <!-- Decorative divider -->
-                <ul>
-                    <li>Worked in a team to build a full-stack travel web application featuring <strong>user authentication</strong>, <strong>interactive maps</strong>, and <strong>wishlist management</strong>.</li>
-                    <li>Implemented dynamic attraction filtering and location-based services using <strong>JavaScript</strong>, <strong>Flask</strong>, and the <strong>Google Maps API</strong>.</li>
-                    <li>Utilized <strong>Google Cloud SQL</strong> and other <strong>GCP</strong> tools for backend development and data storage.</li>
-                </ul>
+            <h1>Weather Forecasting Android App</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Built a mobile weather app in Android Studio as part of CS 427 term project, integrating real-time weather data using a public API.</li>
+                <li>Implemented offline data caching using Room (SQLite), enabling access to recent weather info without internet.</li>
+                <li>Designed user flows including login, map-based location input, and dynamic weather display screens.</li>
+                <li>Incorporated Gemini LLM to provide personalized weather insights using API-generated summaries.</li>
+                <li>Applied Agile development with milestone-based sprints and tested core functionality using JUnit.</li>
+            </ul>
             </section>
 
+            <!-- 4. SWE RSO App – leadership + full-stack Firebase -->
             <section class="section active">
-                <h1>Stock Market Predictor</h1>
-                <hr class="styled-divider"> <!-- Decorative divider -->
-                <ul>
-                    <li>Developed a stock price predictor using <strong>machine learning regression models</strong>.</li>
-                    <li>Implemented the application with <strong>Python</strong> and <strong>Streamlit</strong> for an interactive UI.</li>
-                </ul>
+            <h1>SWE RSO Mobile App (In Progress)</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Building a mobile app using <strong>Flutter</strong> for SWE members to view <strong>calendar updates</strong>, track <strong>event points</strong>, and stay connected.</li>
+                <li>Responsible for full-stack integration with <strong>Firebase</strong> for authentication and data storage.</li>
+            </ul>
             </section>
 
+            <!-- 5. Stock Predictor – ML, Streamlit, AI4ALL -->
             <section class="section active">
-                <h1>Space Invaders Game</h1>
-                <hr class="styled-divider"> <!-- Decorative divider -->
-                <ul>
-                    <li>Created a <strong>Space Invaders game</strong> using <strong>SystemVerilog</strong> and <strong>FPGA</strong>.</li>
-                    <li>Designed animations, keycodes, and implemented FSM logic for game mechanics.</li>
-                </ul>
+            <h1>Stock Market Predictor</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Developed a stock forecasting tool using <strong>regression-based machine learning models</strong> as part of the <strong>AI4ALL program</strong>.</li>
+                <li>Built an interactive UI using <strong>Streamlit</strong> and implemented data visualization and prediction evaluation in <strong>Python</strong>.</li>
+            </ul>
             </section>
 
+            <!-- 6. Senior Design Battlebot – hardware integration, PCB, ESP32 -->
             <section class="section active">
-                <h1>Linux OS Development</h1>
-                <hr class="styled-divider"> <!-- Decorative divider -->
-                <ul>
-                    <li>Developed a 32-bit kernel using <strong>C/C++</strong> and <strong>x86 Assembly</strong>.</li>
-                    <li>Implemented features such as paging, system calls, interrupts, and Round-Robin scheduling.</li>
-                </ul>
+            <h1>Senior Design: Antweight Battlebot</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Designed and built a 2lb battlebot with a custom PCB, mecanum wheels, and a spinning weapon.</li>
+                <li>Programmed the <strong>ESP32-C3</strong> for wireless control and integrated <strong>DRV8833 motor drivers</strong> and voltage regulators.</li>
+                <li>Handled embedded software, power calculations, and final hardware integration for demo.</li>
+            </ul>
             </section>
-    
+
+            <!-- 7. Linux Kernel – low-level systems dev -->
             <section class="section active">
-                <h1>WECE Robotic Arm Controller</h1>
-                <hr class="styled-divider">
-                <ul>
-                    <li>Developed a mobile app interface to control a robotic arm via <strong>Bluetooth</strong> communication.</li>
-                    <li>Implemented app commands using <strong>Arduino</strong> and <strong>flutter</strong>.</li>
-                </ul>
+            <h1>Linux OS Development</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Built a 32-bit kernel using <strong>C/C++</strong> and <strong>x86 Assembly</strong>, including paging, interrupts, and system calls.</li>
+                <li>Implemented <strong>Round-Robin scheduling</strong>, keyboard/mouse drivers, and an interactive terminal.</li>
+            </ul>
             </section>
-    
+
+            <!-- 8. Space Invaders – digital design + FSMs -->
+            <section class="section active">
+            <h1>Space Invaders Game</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Designed and implemented a <strong>Space Invaders game</strong> using <strong>SystemVerilog</strong> and <strong>FPGA</strong> for real-time play.</li>
+                <li>Developed animations, input handling via keycodes, and <strong>finite state machines (FSMs)</strong> to manage game logic.</li>
+            </ul>
+            </section>
+
+            <!-- 9. WECE Robotic Arm Controller – Arduino + Flutter -->
+            <section class="section active">
+            <h1>WECE Robotic Arm Controller</h1>
+            <hr class="styled-divider">
+            <ul>
+                <li>Created a mobile interface using <strong>Flutter</strong> to control a robotic arm via <strong>Bluetooth</strong>.</li>
+                <li>Programmed the robotic arm’s control logic on <strong>Arduino</strong> and implemented command protocols.</li>
+            </ul>
+            </section>
+
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer>

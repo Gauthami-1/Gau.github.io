@@ -4,6 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* INTRO STYLE */
+#intro {
+  font-size: 18px;
+  font-style: italic;  /* this makes it look like <em> */
+  color: black;        /* force text to be black */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
 
 /* BODY AND LAYOUT STYLES - Sets up the main body styling and layout */
 body {
@@ -154,7 +164,9 @@ ul li {
     margin-bottom: 5px;
     text-align: left;
 }
-
+#skills_text{
+    color:black
+}
 /* SKILLS SECTION FORMATTING - Styles for skills section */
 .skills-section {
     max-width: 800px;
